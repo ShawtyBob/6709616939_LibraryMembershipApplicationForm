@@ -6,6 +6,111 @@
     <title>Document</title>
 </head>
 <body>
+    <form>
+        <label for="ENGfname">ชื่อ (ภาษาอังกฤษ):</label>
+        <input type="text" id="fname" name="fname" required><br>
+        <span class="small-text">กรุณากรอกชื่อผู้ใช้ที่มีความยาวอย่างน้อย 5 ตัวอักษร</span><br>
+        <label for="ENGlname">นามสกุล (ภาษาอังกฤษ):</label>
+        <input type="text" id="lname" name="lname" required><br><br>
+        
+        <label for="Thainame">ชื่อ:</label>
+        <input type="text" id="THfname" name="THfname" required><br><br>
+        <label for="Thailname">สกุล:</label>
+        <input type="text" id="THlname" name="THlname" required><br><br>
 
+        <label for="Gender">เพศ</label><br>
+        <input type="radio" id="Male" name="Gender" required >
+        <label for="male">เพศชาย</label><br>
+        <input type="radio" id="Female" name="Gender" required>
+        <label for="female">เพศหญิง</label><br>
+        <input type="radio" id="Female" name="Gender" required>
+        <label for="female">Lgbtq+</label><br>
+        <input type="radio" id="Female" name="Gender" required>
+        <label for="female">ไม่ต้องการระบุ</label><br>
+        
+        
+        <br>
+
+        <label for="studentid">รหัสนักศึกษา</label><br>
+        <input type="text" id="studentid" name="studentid" minlength="10" maxlength="10"required><br>
+
+        
+        <label for="faculty">คณะที่ศึกษา</label><br>
+        <select id="faculty" name="faculty" size="1" required>
+            <option value="Law">คณะนิติศาสตร์</option>
+            <option value="Business">คณะพาณิชยศาสตร์และการบัญชี</option>
+            <option value="Political">คณะรัฐศาสตร์</option>
+            <option value="Economics">คณะเศรษฐศาสตร์</option>
+            <option value="Administration">คณะสังคมสงเคราะห์ศาสตร์</option>
+            <option value="Sociology">คณะสังคมวิทยาและมานุษยวิทยา</option>
+            <option value="Arts">คณะศิลปศาสตร์</option>
+            <option value="JC">คณะวารสารศาสตร์และสื่อสารมวลชน</option>
+            <option value="SCI">คณะวิทยาศาสตร์และเทคโนโลยี</option>
+            <option value="AE">คณะวิศวกรรมศาสตร์</option>
+            <option value="Architecture">คณะสถาปัตยกรรมศาสตร์และการผังเมือง</option>
+            <option value="AppliedArts">คณะศิลปกรรมศาสตร์</option>
+            <option value="Med">คณะแพทยศาสตร์</option>
+            <option value="AlliedHealth">คณะสหเวชศาสตร์</option>
+            <option value="Dent">คณะทันตแพทยศาสตร์</option>
+            <option value="Ns">คณะพยาบาลศาสตร์</option>
+            <option value="Public Health">คณะสาธารณสุขศาสตร์</option>
+            <option value="Pharmacy">คณะเภสัชศาสตร์</option>
+            <option value="SciencesandEducation">คณะวิทยาการเรียนรู้และศึกษาศาสตร์</option>
+            <option value="PueyUngphakorn">วิทยาลัยพัฒนศาสตร์ ป๋วย อึ๊งภากรณ์</option>
+            <option value="Innovation">วิทยาลัยนวัตกรรม</option>
+            <option value="Interdisciplinary">วิทยาลัยสหวิทยาการ</option>
+            <option value="GlobalStudies">วิทยาลัยโลกคดีศึกษา</option>
+            <option value="SIIT">สถาบันเทคโนโลยีนานาชาติสิรินธร</option>
+            <option value="PridiBanomyong">วิทยาลัยนานาชาติ ปรีดี พนมยงค์</option>
+            <option value="Chulabhorn">วิทยาลัยแพทยศาสตร์นานาชาติจุฬาภรณ์</option>
+          </select><br><br>
+
+
+        <label for="Email">E-mail address</label><br>
+        <input type="email" id="email" name="email" required ><br>
+
+        <label for="Birthday">วันเดือนปีเกิด</label><br>
+        <input type="date" id="Birthday" name="Birthday" required><br>
+
+        <label for="Book">ประเภทของหนังสือที่สนใจ</label><br>
+        <input type="checkbox" id="Fantasy" name="Fantasy" >
+        <label for="Fantasy">แฟนตาซี</label><br>
+        <input type="checkbox" id="Mystery" name="Mystery" >
+        <label for="Mystery">นิยายลึกลับ</label><br>
+        <input type="checkbox" id="Horror" name="Horror" >
+        <label for="Horror">สยองขวัญ</label><br>
+        <input type="checkbox" id="Thriller" name="Thriller" >
+        <label for="Thriller">ระทึกขวัญ</label><br>
+        <input type="checkbox" id="Historical" name="Historical" >
+        <label for="Historical">ประวัติศาสตร์</label><br>
+        <input type="checkbox" id="Romance" name="Romance" >
+        <label for="Romance">โรแมนติก</label><br>
+        <input type="checkbox" id="Science" name="Science" >
+        <label for="Science">วิทยาศาสตร์</label><br>
+        <input type="checkbox" id="Comedy" name="Comedy" >
+        <label for="Comedy">ตลก</label><br>
+        <input type="checkbox" id="Kids" name="Kids" >
+        <label for="Kids">หนังสือสำหรับเด็ก</label><br>
+        <input type="checkbox" id="Biography" name="Biography" >
+        <label for="Biography">ชีวประวัติ</label><br>
+        <input type="checkbox" id="Food" name="Food" >
+        <label for="Food">อาหารและเครื่องดื่ม</label><br>
+        <input type="checkbox" id="ArtPhotography" name="ArtPhotography" >
+        <label for="ArtPhotography">ศิลปะและการถ่ายภาพ</label><br>
+        <input type="checkbox" id="Self-help" name="Self-help" >
+        <label for="Self-help">หนังสือพัฒนาตนเอง</label><br>
+
+
+        <br>
+        <label for="news">ความต้องการรับข่าวสารข้อมูลของห้องสมุดทางอีเมลหรือไม่</label><br>
+        <input type="radio" id="fname" name="news" required>
+        <label for="XX">ใช่ ฉันต้องการได้รับข่าวสาร</label><br>
+        <input type="radio" id="fname" name="news" required>
+        <label for="XX">ไม่ ฉันไม่ต้องการได้รับข่าวสาร</label><br>
+
+
+        <br>
+        <input type="submit" value="Submit">
+    </form> 
 </body>
 </html>

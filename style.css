@@ -4,7 +4,7 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
-    background-color: #3d3d3d;
+    background-image: url(resources/LBR.png);
 }
 form {
     background-color: #fff;

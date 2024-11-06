@@ -16,18 +16,19 @@
         <input type="text" id="THfname" name="THfname" placeholder="ชื่อ" required>
         <input type="text" id="THlname" name="THlname" placeholder="นามสกุล"required><br><br>
             
-        <div class="genid">
+        <div class="grid">
             <input type="email" id="email" name="email" placeholder="E-mail address" required >
             
             <input type="text" id="studentid" name="studentid" minlength="10" maxlength="10" placeholder="รหัสนักศึกษา" required>
-            <br>
+        
             
         </div>
             <br>
-        <div class="genid">
-
-            <label for="Birthday">วัน/เดือน/ปีเกิด</label><br>
-            <input type="date" id="Birthday" name="Birthday" required><br>
+        <div class="grid">
+            <div class="BD">
+                <label for="Birthday">วัน/เดือน/ปีเกิด</label><br>
+                <input type="date" id="Birthday" name="Birthday" required><br>
+            </div>
 
             <div class="faculty"> 
                 <label for="faculty">คณะที่ศึกษา</label><br>
@@ -60,47 +61,44 @@
                     <option value="Chulabhorn">วิทยาลัยแพทยศาสตร์นานาชาติจุฬาภรณ์</option>
                 </select>
             </div>
-            
+
         </div>
         <div class="Gender">
             <label for="Gender">เพศ</label><br>
-            <input type="radio" id="Male" name="Gender" required >
-            <label for="male">เพศชาย</label><br>
-            <input type="radio" id="Female" name="Gender" required>
-            <label for="female">เพศหญิง</label><br>
-            <input type="radio" id="Female" name="Gender" required>
-            <label for="female">Lgbtq+</label><br>
-            <input type="radio" id="Female" name="Gender" required>
-            <label for="female">ไม่ต้องการระบุ</label>
+            <select id="Gender" name="Gender" size="1" >
+                <option value="Male">เพศชาย</option>
+                <option value="Female"">เพศหญิง</option>
+                <option value="LGBTQ"">LGBTQ+</option>
+                <option value="None"">ไม่ต้องการระบุ</option>
+            </select>
         </div>
-
-        <label for="Book">ประเภทของหนังสือที่สนใจ</label><br>
-        <input type="checkbox" id="Fantasy" name="Fantasy" >
-        <label for="Fantasy">แฟนตาซี</label><br>
-        <input type="checkbox" id="Mystery" name="Mystery" >
-        <label for="Mystery">นิยายลึกลับ</label><br>
-        <input type="checkbox" id="Horror" name="Horror" >
-        <label for="Horror">สยองขวัญ</label><br>
-        <input type="checkbox" id="Thriller" name="Thriller" >
-        <label for="Thriller">ระทึกขวัญ</label><br>
-        <input type="checkbox" id="Historical" name="Historical" >
-        <label for="Historical">ประวัติศาสตร์</label><br>
-        <input type="checkbox" id="Romance" name="Romance" >
-        <label for="Romance">โรแมนติก</label><br>
-        <input type="checkbox" id="Science" name="Science" >
-        <label for="Science">วิทยาศาสตร์</label><br>
-        <input type="checkbox" id="Comedy" name="Comedy" >
-        <label for="Comedy">ตลก</label><br>
-        <input type="checkbox" id="Kids" name="Kids" >
-        <label for="Kids">หนังสือสำหรับเด็ก</label><br>
-        <input type="checkbox" id="Biography" name="Biography" >
-        <label for="Biography">ชีวประวัติ</label><br>
-        <input type="checkbox" id="Food" name="Food" >
-        <label for="Food">อาหารและเครื่องดื่ม</label><br>
-        <input type="checkbox" id="ArtPhotography" name="ArtPhotography" >
-        <label for="ArtPhotography">ศิลปะและการถ่ายภาพ</label><br>
-        <input type="checkbox" id="Self-help" name="Self-help" >
-        <label for="Self-help">หนังสือพัฒนาตนเอง</label><br>
+            <label for="Book">ประเภทของหนังสือที่สนใจ</label><br>
+            <input type="checkbox" id="Fantasy" name="Fantasy" >
+            <label for="Fantasy">แฟนตาซี</label><br>
+            <input type="checkbox" id="Mystery" name="Mystery" >
+            <label for="Mystery">นิยายลึกลับ</label><br>
+            <input type="checkbox" id="Horror" name="Horror" >
+            <label for="Horror">สยองขวัญ</label><br>
+            <input type="checkbox" id="Thriller" name="Thriller" >
+            <label for="Thriller">ระทึกขวัญ</label><br>
+            <input type="checkbox" id="Historical" name="Historical" >
+            <label for="Historical">ประวัติศาสตร์</label><br>
+            <input type="checkbox" id="Romance" name="Romance" >
+            <label for="Romance">โรแมนติก</label><br>
+            <input type="checkbox" id="Science" name="Science" >
+            <label for="Science">วิทยาศาสตร์</label><br>
+            <input type="checkbox" id="Comedy" name="Comedy" >
+            <label for="Comedy">ตลก</label><br>
+            <input type="checkbox" id="Kids" name="Kids" >
+            <label for="Kids">หนังสือสำหรับเด็ก</label><br>
+            <input type="checkbox" id="Biography" name="Biography" >
+            <label for="Biography">ชีวประวัติ</label><br>
+            <input type="checkbox" id="Food" name="Food" >
+            <label for="Food">อาหารและเครื่องดื่ม</label><br>
+            <input type="checkbox" id="ArtPhotography" name="ArtPhotography" >
+            <label for="ArtPhotography">ศิลปะและการถ่ายภาพ</label><br>
+            <input type="checkbox" id="Self-help" name="Self-help" >
+            <label for="Self-help">หนังสือพัฒนาตนเอง</label><br>
 
 
         <br>

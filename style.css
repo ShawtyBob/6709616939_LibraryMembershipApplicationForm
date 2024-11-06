@@ -24,7 +24,7 @@ form {
 h2{
     text-align: center;
 }
-/* input */
+/* input&select */
 input[type="text"], input[type="email"] {
     width: 40%;
     padding: 10px;
@@ -46,27 +46,33 @@ input[type="submit"] {
 input::placeholder {
     color: #747070;
 }
-input[type="checkbox"],input[type="radio"] {
+input[type="checkbox"] {
     margin: 5px 0;
 }
-select{
+select,input[type="date"]{
     width: 89%;
     padding: 10px;
     margin-top: 5px;
 }
+input[type="date"]{
+    width: 87%;
+}
 
 /* class */
-.genid{
+.grid{
     display: grid; 
     grid-template-columns: 1fr 1fr;
 }
 .Gender {
     margin-top: 10px;
     margin-left: 30px;
-    width: 40%;
+    width: 49%;
 }
 .faculty{
     margin-left: 12px;
+}
+.BD{
+    margin-left: 30px;
 }
 
 /* id */

@@ -25,11 +25,14 @@ h2{
     text-align: center;
 }
 /* input */
-input[type="text"] {
+input[type="text"], input[type="email"] {
     width: 40%;
     padding: 10px;
     margin-left: 30px;
 
+}
+input[type="email"] {
+    width: 80%;
 }
 input[type="submit"] {
     background-color: #33ae73;
@@ -48,6 +51,8 @@ input[type="checkbox"],input[type="radio"] {
 }
 select{
     width: 89%;
+    padding: 10px;
+    margin-top: 5px;
 }
 
 /* class */
@@ -62,13 +67,11 @@ select{
 }
 .faculty{
     margin-left: 12px;
-    margin-top: -52px;
 }
 
 /* id */
 #studentid{
     height: 20px;
     width: 80%;
-    margin-top: 10px;
     margin-left: 12px;
 }

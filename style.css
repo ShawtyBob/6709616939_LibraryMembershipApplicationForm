@@ -46,6 +46,9 @@ input::placeholder {
 input[type="checkbox"],input[type="radio"] {
     margin: 5px 0;
 }
+select{
+    width: 89%;
+}
 
 /* class */
 .genid{
@@ -53,14 +56,19 @@ input[type="checkbox"],input[type="radio"] {
     grid-template-columns: 1fr 1fr;
 }
 .Gender {
+    margin-top: 10px;
     margin-left: 30px;
     width: 40%;
+}
+.faculty{
+    margin-left: 12px;
+    margin-top: -52px;
 }
 
 /* id */
 #studentid{
     height: 20px;
     width: 80%;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-left: 12px;
 }

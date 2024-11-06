@@ -25,7 +25,7 @@ h2{
     text-align: center;
 }
 /* input&select */
-input[type="text"], input[type="email"] {
+input[type="text"], input[type="email"],input[type="password"] {
     width: 40%;
     padding: 10px;
     margin-left: 30px;
@@ -35,19 +35,20 @@ input[type="email"] {
     width: 80%;
 }
 input[type="submit"] {
-    background-color: #33ae73;
+    background-color: #e9227f;
     color: white;
-    padding: 10px 20px;
+    padding: 15px 70px;
     border: none;
     border-radius: 7px;
     cursor: pointer;
     font-size: 16px;
+    margin-left:35% ;
 }
 input::placeholder {
     color: #747070;
 }
 input[type="checkbox"] {
-    margin: 5px 0;
+    margin: 5px 0 12px ;
 }
 select,input[type="date"]{
     width: 89%;
@@ -56,6 +57,9 @@ select,input[type="date"]{
 }
 input[type="date"]{
     width: 87%;
+}
+input[type="radio"]{
+    margin-left: 30px;
 }
 
 /* class */
@@ -66,13 +70,18 @@ input[type="date"]{
 .Gender {
     margin-top: 10px;
     margin-left: 30px;
-    width: 49%;
+    width: 48.5%;
 }
 .faculty{
     margin-left: 12px;
 }
 .BD{
     margin-left: 30px;
+}
+.grid-checkbox{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 10px;
 }
 
 /* id */

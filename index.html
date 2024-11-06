@@ -72,34 +72,46 @@
                 <option value="None"">ไม่ต้องการระบุ</option>
             </select>
         </div>
-            <label for="Book">ประเภทของหนังสือที่สนใจ</label><br>
-            <input type="checkbox" id="Fantasy" name="Fantasy" >
-            <label for="Fantasy">แฟนตาซี</label><br>
-            <input type="checkbox" id="Mystery" name="Mystery" >
-            <label for="Mystery">นิยายลึกลับ</label><br>
-            <input type="checkbox" id="Horror" name="Horror" >
-            <label for="Horror">สยองขวัญ</label><br>
-            <input type="checkbox" id="Thriller" name="Thriller" >
-            <label for="Thriller">ระทึกขวัญ</label><br>
-            <input type="checkbox" id="Historical" name="Historical" >
-            <label for="Historical">ประวัติศาสตร์</label><br>
-            <input type="checkbox" id="Romance" name="Romance" >
-            <label for="Romance">โรแมนติก</label><br>
-            <input type="checkbox" id="Science" name="Science" >
-            <label for="Science">วิทยาศาสตร์</label><br>
-            <input type="checkbox" id="Comedy" name="Comedy" >
-            <label for="Comedy">ตลก</label><br>
-            <input type="checkbox" id="Kids" name="Kids" >
-            <label for="Kids">หนังสือสำหรับเด็ก</label><br>
-            <input type="checkbox" id="Biography" name="Biography" >
-            <label for="Biography">ชีวประวัติ</label><br>
-            <input type="checkbox" id="Food" name="Food" >
-            <label for="Food">อาหารและเครื่องดื่ม</label><br>
-            <input type="checkbox" id="ArtPhotography" name="ArtPhotography" >
-            <label for="ArtPhotography">ศิลปะและการถ่ายภาพ</label><br>
-            <input type="checkbox" id="Self-help" name="Self-help" >
-            <label for="Self-help">หนังสือพัฒนาตนเอง</label><br>
+        <br>
+        <input type="text" id="Username" name="Username" placeholder="Username" required>
+        <input type="password" id="password" name="fname" placeholder="Password" required>
+        <br><br>
 
+            <label for="Book" id="books">ประเภทของหนังสือที่สนใจ</label><br>
+            <div class="grid-checkbox">
+                <div class="BD">
+                    <input type="checkbox" id="Fantasy" name="Fantasy">
+                    <label for="Fantasy">แฟนตาซี</label><br>
+                    <input type="checkbox" id="Mystery" name="Mystery">
+                    <label for="Mystery">นิยายลึกลับ</label><br>
+                    <input type="checkbox" id="Horror" name="Horror">
+                    <label for="Horror">สยองขวัญ</label><br>
+                    <input type="checkbox" id="Thriller" name="Thriller">
+                    <label for="Thriller">ระทึกขวัญ</label><br>
+                    <input type="checkbox" id="Historical" name="Historical">
+                    <label for="Historical">ประวัติศาสตร์</label><br>
+                    <input type="checkbox" id="Romance" name="Romance">
+                    <label for="Romance">โรแมนติก</label><br>
+                    <input type="checkbox" id="Science" name="Science">
+                    <label for="Science">วิทยาศาสตร์</label><br>
+                </div>
+                <div>
+                    <input type="checkbox" id="Comedy" name="Comedy">
+                    <label for="Comedy">ตลก</label><br>
+                    <input type="checkbox" id="Kids" name="Kids">
+                    <label for="Kids">หนังสือสำหรับเด็ก</label><br>
+                    <input type="checkbox" id="Biography" name="Biography">
+                    <label for="Biography">ชีวประวัติ</label><br>
+                    <input type="checkbox" id="Food" name="Food">
+                    <label for="Food">อาหารและเครื่องดื่ม</label><br>
+                    <input type="checkbox" id="ArtPhotography" name="ArtPhotography">
+                    <label for="ArtPhotography">ศิลปะและการถ่ายภาพ</label><br>
+                    <input type="checkbox" id="Self-help" name="Self-help">
+                    <label for="Self-help">หนังสือพัฒนาตนเอง</label><br>
+                    <input type="checkbox" id="else" name="else">
+                    <label for="else">อื่นๆ</label><br>
+                </div>
+            </div>
 
         <br>
         <label for="news">ความต้องการรับข่าวสารข้อมูลของห้องสมุดทางอีเมลหรือไม่</label><br>
@@ -110,7 +122,7 @@
 
 
         <br>
-        <input type="submit" value="Submit">
+        <input type="submit" value="Sign up">
     </form> 
 </body>
 </html>

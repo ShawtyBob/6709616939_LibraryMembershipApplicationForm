@@ -15,52 +15,52 @@
         
         <input type="text" id="THfname" name="THfname" placeholder="ชื่อ" required>
         <input type="text" id="THlname" name="THlname" placeholder="นามสกุล"required><br><br>
-
-        <label for="Gender">เพศ</label><br>
-        <input type="radio" id="Male" name="Gender" required >
-        <label for="male">เพศชาย</label><br>
-        <input type="radio" id="Female" name="Gender" required>
-        <label for="female">เพศหญิง</label><br>
-        <input type="radio" id="Female" name="Gender" required>
-        <label for="female">Lgbtq+</label><br>
-        <input type="radio" id="Female" name="Gender" required>
-        <label for="female">ไม่ต้องการระบุ</label><br>
-        
-        
-        <br>
-
-        <input type="text" id="studentid" name="studentid" minlength="10" maxlength="10" placeholder="รหัสนักศึกษา" required><br><br>
-
-        
-        <label for="faculty">คณะที่ศึกษา</label><br>
-        <select id="faculty" name="faculty" size="1" required>
-            <option value="Law">คณะนิติศาสตร์</option>
-            <option value="Business">คณะพาณิชยศาสตร์และการบัญชี</option>
-            <option value="Political">คณะรัฐศาสตร์</option>
-            <option value="Economics">คณะเศรษฐศาสตร์</option>
-            <option value="Administration">คณะสังคมสงเคราะห์ศาสตร์</option>
-            <option value="Sociology">คณะสังคมวิทยาและมานุษยวิทยา</option>
-            <option value="Arts">คณะศิลปศาสตร์</option>
-            <option value="JC">คณะวารสารศาสตร์และสื่อสารมวลชน</option>
-            <option value="SCI">คณะวิทยาศาสตร์และเทคโนโลยี</option>
-            <option value="AE">คณะวิศวกรรมศาสตร์</option>
-            <option value="Architecture">คณะสถาปัตยกรรมศาสตร์และการผังเมือง</option>
-            <option value="AppliedArts">คณะศิลปกรรมศาสตร์</option>
-            <option value="Med">คณะแพทยศาสตร์</option>
-            <option value="AlliedHealth">คณะสหเวชศาสตร์</option>
-            <option value="Dent">คณะทันตแพทยศาสตร์</option>
-            <option value="Ns">คณะพยาบาลศาสตร์</option>
-            <option value="Public Health">คณะสาธารณสุขศาสตร์</option>
-            <option value="Pharmacy">คณะเภสัชศาสตร์</option>
-            <option value="SciencesandEducation">คณะวิทยาการเรียนรู้และศึกษาศาสตร์</option>
-            <option value="PueyUngphakorn">วิทยาลัยพัฒนศาสตร์ ป๋วย อึ๊งภากรณ์</option>
-            <option value="Innovation">วิทยาลัยนวัตกรรม</option>
-            <option value="Interdisciplinary">วิทยาลัยสหวิทยาการ</option>
-            <option value="GlobalStudies">วิทยาลัยโลกคดีศึกษา</option>
-            <option value="SIIT">สถาบันเทคโนโลยีนานาชาติสิรินธร</option>
-            <option value="PridiBanomyong">วิทยาลัยนานาชาติ ปรีดี พนมยงค์</option>
-            <option value="Chulabhorn">วิทยาลัยแพทยศาสตร์นานาชาติจุฬาภรณ์</option>
-          </select><br><br>
+            
+        <div class="genid">
+            <div class="Gender">
+                <label for="Gender">เพศ</label><br>
+                <input type="radio" id="Male" name="Gender" required >
+                <label for="male">เพศชาย</label><br>
+                <input type="radio" id="Female" name="Gender" required>
+                <label for="female">เพศหญิง</label><br>
+                <input type="radio" id="Female" name="Gender" required>
+                <label for="female">Lgbtq+</label><br>
+                <input type="radio" id="Female" name="Gender" required>
+                <label for="female">ไม่ต้องการระบุ</label>
+            </div>
+            
+            <input type="text" id="studentid" name="studentid" minlength="10" maxlength="10" placeholder="รหัสนักศึกษา" required>
+                <br>
+            <label for="faculty">คณะที่ศึกษา</label><br>
+            <select id="faculty" name="faculty" size="1" required>
+                <option value="Law">คณะนิติศาสตร์</option>
+                <option value="Business">คณะพาณิชยศาสตร์และการบัญชี</option>
+                <option value="Political">คณะรัฐศาสตร์</option>
+                <option value="Economics">คณะเศรษฐศาสตร์</option>
+                <option value="Administration">คณะสังคมสงเคราะห์ศาสตร์</option>
+                <option value="Sociology">คณะสังคมวิทยาและมานุษยวิทยา</option>
+                <option value="Arts">คณะศิลปศาสตร์</option>
+                <option value="JC">คณะวารสารศาสตร์และสื่อสารมวลชน</option>
+                <option value="SCI">คณะวิทยาศาสตร์และเทคโนโลยี</option>
+                <option value="AE">คณะวิศวกรรมศาสตร์</option>
+                <option value="Architecture">คณะสถาปัตยกรรมศาสตร์และการผังเมือง</option>
+                <option value="AppliedArts">คณะศิลปกรรมศาสตร์</option>
+                <option value="Med">คณะแพทยศาสตร์</option>
+                <option value="AlliedHealth">คณะสหเวชศาสตร์</option>
+                <option value="Dent">คณะทันตแพทยศาสตร์</option>
+                <option value="Ns">คณะพยาบาลศาสตร์</option>
+                <option value="Public Health">คณะสาธารณสุขศาสตร์</option>
+                <option value="Pharmacy">คณะเภสัชศาสตร์</option>
+                <option value="SciencesandEducation">คณะวิทยาการเรียนรู้และศึกษาศาสตร์</option>
+                <option value="PueyUngphakorn">วิทยาลัยพัฒนศาสตร์ ป๋วย อึ๊งภากรณ์</option>
+                <option value="Innovation">วิทยาลัยนวัตกรรม</option>
+                <option value="Interdisciplinary">วิทยาลัยสหวิทยาการ</option>
+                <option value="GlobalStudies">วิทยาลัยโลกคดีศึกษา</option>
+                <option value="SIIT">สถาบันเทคโนโลยีนานาชาติสิรินธร</option>
+                <option value="PridiBanomyong">วิทยาลัยนานาชาติ ปรีดี พนมยงค์</option>
+                <option value="Chulabhorn">วิทยาลัยแพทยศาสตร์นานาชาติจุฬาภรณ์</option>
+          </select>
+        </div>
 
         <input type="email" id="email" name="email" placeholder="E-mail address" required ><br>
 

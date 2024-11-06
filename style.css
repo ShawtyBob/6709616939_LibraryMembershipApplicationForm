@@ -1,7 +1,8 @@
+html{
+    height: 100vh;
+}
 body {
     font-family: Arial, sans-serif;
-    display: grid;
-    justify-content: center;
     height: 100vh;
     margin: 0;
     background-image: url(resources/LBR.png);
@@ -12,9 +13,11 @@ form {
     padding-right: 70px;
     padding-top: 20px ;
     padding-bottom: 60px;
+    margin-left: 50px;
+    margin-top: 50px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
+    width: 40%;
     max-width: 900px;
     
 }
@@ -25,6 +28,7 @@ h2{
 input[type="text"] {
     width: 40%;
     padding: 10px;
+    margin-left: 30px;
 
 }
 input[type="submit"] {
@@ -43,5 +47,20 @@ input[type="checkbox"],input[type="radio"] {
     margin: 5px 0;
 }
 
+/* class */
+.genid{
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+}
+.Gender {
+    margin-left: 30px;
+    width: 40%;
+}
 
-
+/* id */
+#studentid{
+    height: 20px;
+    width: 80%;
+    margin-top: 30px;
+    margin-left: 12px;
+}

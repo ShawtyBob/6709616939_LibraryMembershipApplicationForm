@@ -25,11 +25,14 @@ form {
 h2{
     text-align: center;
     color: rgb(235, 100, 166);
+    margin-bottom: 15px;
+    margin-top: 20px;
 }
 label{
     color: rgb(235, 100, 166);
 }
-small{
+span{
+    color: red;
 }
 
 /* input&select */
@@ -74,13 +77,23 @@ input[type="radio"]{
     margin-top: 15px;
 }
 
-input[type="text"]:valid ,input[type="date"]:valid,input[type="email"]:valid,input[type="password"]:valid{
+input[type="text"]:valid ,input[type="date"]:valid,input[type="email"]:valid,input[type="password"]:valid,select:valid{
     border: rgb(37, 199, 37) solid;
 }
-input[type="text"]:invalid + .error-message,input[type="password"]:invalid + .error-message2{
+input[type="text"]:invalid + .error-message,input[type="password"]:invalid + .error-message2,input[type="email"]:invalid + .error-message,input[type="text"]:invalid + .error-message2{
+    display: none;
+}
+input[type="text"]:invalid:not(:placeholder-shown) + .error-message
+,input[type="password"]:invalid:not(:placeholder-shown) + .error-message2
+,input[type="email"]:invalid:not(:placeholder-shown) + .error-message
+,input[type="text"]:invalid:not(:placeholder-shown) + .error-message2{
     display: block;
 }
-input:valid + .error-message {
+input:invalid ~ .complete{
+    display: block;
+}
+input:valid + .error-message 
+,input:valid + .error-message2{
     display: none; 
 }
 
@@ -108,29 +121,24 @@ input:valid + .error-message {
 .error-message {
     color: red;
     font-size: 12px;
-    display: none; 
     margin-top: 5px;
     margin-left: 40px;
 }
 .error-message2 {
     color: red;
     font-size: 12px;
-    display: none; 
     margin-top: 5px;
     margin-left: 30px;
-
+}
+.space{
+    height: 15px;
 }
 
 /* id */
-#studentid{
-    height: 20px;
-    width: 80%;
-    margin-left: 16px;
-}
-#Username{
+#Username,#fname,#THfname{
     width: 80%;
 }
-#password{
+#password,#lname,#THlname,#studentid{
     margin-left: 16px;
     width: 80%;
 }

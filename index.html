@@ -9,29 +9,49 @@
 <body>
     <form>
         <h2>สมัครสมาชิกห้องสมุด</h2><br>
-        <input type="text" id="fname" name="fname" placeholder="First name" required>
-        <input type="text" id="lname" name="lname" placeholder="Last name" required><br><br>
-        
-        <input type="text" id="THfname" name="THfname" placeholder="ชื่อ" required>
-        <input type="text" id="THlname" name="THlname" placeholder="นามสกุล"required><br><br>
-            
         <div class="grid">
-            <input type="email" id="email" name="email" placeholder="E-mail address" required >
-            
-            <input type="text" id="studentid" name="studentid" minlength="10" maxlength="10" placeholder="รหัสนักศึกษา" required>
-        
-            
+            <div>
+                <input type="text" id="fname" name="fname" placeholder="First name" pattern=".{2,}" required>
+                <small class="error-message">กรุณากรอก ชื่อจริง (ภาษาอังกฤษ) ให้ถูกต้อง</small> <br>
+            </div>
+            <div>
+                <input type="text" id="lname" name="lname" placeholder="Last name" pattern=".{2,}" required>
+                <small class="error-message2">กรุณากรอก นามสกุล (ภาษาอังกฤษ) ให้ถูกต้อง </small> 
+            </div>
         </div>
-            <br>
+        <div class="space"></div> 
+        <div class="grid">
+            <div>
+                <input type="text" id="THfname" name="THfname" placeholder="ชื่อ" pattern=".{2,}" required>
+                <small class="error-message">กรุณากรอก ชื่อจริง ให้ถูกต้อง </small> 
+            </div>
+            <div>
+                <input type="text" id="THlname" name="THlname" placeholder="นามสกุล" pattern=".{2,}" required>
+                <small class="error-message2">กรุณากรอก นามสกุล ให้ถูกต้อง </small>    <br>
+            </div>
+        </div>
+        <div class="space"></div> 
+        <div class="grid">
+            <div>
+                <input type="email" id="email" name="email" placeholder="E-mail address" required >
+                <small class="error-message">กรุณากรอก E-mail ให้ถูกต้อง </small>    <br>
+            </div>
+            <div>
+                <input type="text" id="studentid" name="studentid" minlength="10" maxlength="10" placeholder="รหัสนักศึกษา" pattern="[0-9]+" required>
+                <small class="error-message2">กรุณากรอก รหัสนักศึกษา ให้ถูกต้อง</small>
+            </div>
+        </div>
+        <div class="space"></div> 
         <div class="grid">
             <div class="BD">
                 <label for="Birthday">วัน/เดือน/ปีเกิด</label><br>
-                <input type="date" id="Birthday" name="Birthday" required><br>
+                <input type="date" id="Birthday" name="Birthday" required>
             </div>
 
             <div class="faculty"> 
                 <label for="faculty">คณะที่ศึกษา</label><br>
                 <select id="faculty" name="faculty" size="1" required>
+                    <option value="" disabled selected>-- กรุณาเลือกคณะ --</option>
                     <option value="Law">คณะนิติศาสตร์</option>
                     <option value="Business">คณะพาณิชยศาสตร์และการบัญชี</option>
                     <option value="Political">คณะรัฐศาสตร์</option>
@@ -64,27 +84,26 @@
         </div>
         <div class="Gender">
             <label for="Gender">เพศ</label><br>
-            <select id="Gender" name="Gender" size="1" >
+            <select id="Gender" name="Gender" size="1" required>
+                <option value="" disabled selected>-- กรุณาเลือกเพศ --</option>
                 <option value="Male">เพศชาย</option>
                 <option value="Female"">เพศหญิง</option>
                 <option value="LGBTQ"">LGBTQ+</option>
-                <option value="None"">ไม่ต้องการระบุ</option>
+                <option value="None">ไม่ต้องการระบุ</option>
             </select>
         </div>
         <br>
         <div class="grid">
             <div>
                 <input type="text" id="Username" name="Username" placeholder="Username" pattern=".{4,}" required>
-                <small class="error-message">กรุณากรอก Username ให้ถูกต้อง (อย่างน้อย 5 ตัวอักษร)</small>    <br>
+                <small class="error-message">กรุณากรอก Username ให้ถูกต้อง (อย่างน้อย 4 ตัวอักษร)</small>    <br>
             </div>
             <div>
-                <input type="password" id="password" name="fname" placeholder="Password" pattern=".{5,}" required>
-                <small class="error-message2">กรุณากรอก Username ให้ถูกต้อง (อย่างน้อย 5 ตัวอักษร)</small>    <br>
+                <input type="password" id="password" name="fname" placeholder="Password" pattern=".{4,}" required>
+                <small class="error-message2">กรุณากรอก Password ให้ถูกต้อง (อย่างน้อย 4 ตัวอักษร)</small>    <br>
             </div>   
-                
         </div>
-        <br><br>
-
+        <br>
             <label for="Book" id="books">ประเภทของหนังสือที่สนใจ</label><br>
             <div class="grid-checkbox">
                 <div class="BD">
@@ -122,14 +141,16 @@
             </div>
 
         <br>
-        <label for="news">ความต้องการรับข่าวสารข้อมูลของห้องสมุดทางอีเมลหรือไม่</label><br>
+        <label for="news">ความต้องการรับข่าวสารข้อมูลของห้องสมุดทางอีเมลหรือไม่<span>*</span></label><br>
         <div class="news">
             <input type="radio" id="news" name="news" required>
             <label for="yes">ใช่ ฉันต้องการได้รับข่าวสาร</label><br>
             <input type="radio" id="news" name="news" required>
             <label for="no">ไม่ ฉันไม่ต้องการได้รับข่าวสาร</label><br>
         </div>
+        <div class="space"></div>
 
+        
         <br>
         <input type="submit" value="Sign up">
     </form> 

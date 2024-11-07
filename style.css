@@ -19,17 +19,26 @@ form {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 40%;
     max-width: 900px;
+    opacity: 90%;
     
 }
 h2{
     text-align: center;
+    color: rgb(235, 100, 166);
 }
+label{
+    color: rgb(235, 100, 166);
+}
+small{
+}
+
 /* input&select */
 input[type="text"], input[type="email"],input[type="password"] {
     width: 40%;
-    padding: 10px;
+    padding: 13px;
     margin-left: 30px;
-
+    border: rgb(235, 100, 166) solid;
+    border-radius: 17px;
 }
 input[type="email"] {
     width: 80%;
@@ -51,15 +60,28 @@ input[type="checkbox"] {
     margin: 5px 0 12px ;
 }
 select,input[type="date"]{
-    width: 89%;
-    padding: 10px;
+    width: 91.5%;
+    padding: 13px;
     margin-top: 5px;
+    border: rgb(235, 100, 166) solid;
+    border-radius: 17px;
 }
 input[type="date"]{
-    width: 87%;
+    width: 86.5%;
 }
 input[type="radio"]{
     margin-left: 30px;
+    margin-top: 15px;
+}
+
+input[type="text"]:valid ,input[type="date"]:valid,input[type="email"]:valid,input[type="password"]:valid{
+    border: rgb(37, 199, 37) solid;
+}
+input[type="text"]:invalid + .error-message,input[type="password"]:invalid + .error-message2{
+    display: block;
+}
+input:valid + .error-message {
+    display: none; 
 }
 
 /* class */
@@ -70,10 +92,10 @@ input[type="radio"]{
 .Gender {
     margin-top: 10px;
     margin-left: 30px;
-    width: 48.5%;
+    width: 47.8%;
 }
 .faculty{
-    margin-left: 12px;
+    margin-left: 15.8px;
 }
 .BD{
     margin-left: 30px;
@@ -83,10 +105,32 @@ input[type="radio"]{
     grid-template-columns: 1fr 1fr; 
     gap: 10px;
 }
+.error-message {
+    color: red;
+    font-size: 12px;
+    display: none; 
+    margin-top: 5px;
+    margin-left: 40px;
+}
+.error-message2 {
+    color: red;
+    font-size: 12px;
+    display: none; 
+    margin-top: 5px;
+    margin-left: 30px;
+
+}
 
 /* id */
 #studentid{
     height: 20px;
     width: 80%;
-    margin-left: 12px;
+    margin-left: 16px;
+}
+#Username{
+    width: 80%;
+}
+#password{
+    margin-left: 16px;
+    width: 80%;
 }

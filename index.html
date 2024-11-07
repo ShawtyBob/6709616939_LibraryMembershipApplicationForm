@@ -9,7 +9,6 @@
 <body>
     <form>
         <h2>สมัครสมาชิกห้องสมุด</h2><br>
-
         <input type="text" id="fname" name="fname" placeholder="First name" required>
         <input type="text" id="lname" name="lname" placeholder="Last name" required><br><br>
         
@@ -73,8 +72,17 @@
             </select>
         </div>
         <br>
-        <input type="text" id="Username" name="Username" placeholder="Username" required>
-        <input type="password" id="password" name="fname" placeholder="Password" required>
+        <div class="grid">
+            <div>
+                <input type="text" id="Username" name="Username" placeholder="Username" pattern=".{4,}" required>
+                <small class="error-message">กรุณากรอก Username ให้ถูกต้อง (อย่างน้อย 5 ตัวอักษร)</small>    <br>
+            </div>
+            <div>
+                <input type="password" id="password" name="fname" placeholder="Password" pattern=".{5,}" required>
+                <small class="error-message2">กรุณากรอก Username ให้ถูกต้อง (อย่างน้อย 5 ตัวอักษร)</small>    <br>
+            </div>   
+                
+        </div>
         <br><br>
 
             <label for="Book" id="books">ประเภทของหนังสือที่สนใจ</label><br>
@@ -115,11 +123,12 @@
 
         <br>
         <label for="news">ความต้องการรับข่าวสารข้อมูลของห้องสมุดทางอีเมลหรือไม่</label><br>
-        <input type="radio" id="news" name="news" required>
-        <label for="XX">ใช่ ฉันต้องการได้รับข่าวสาร</label><br>
-        <input type="radio" id="news" name="news" required>
-        <label for="XX">ไม่ ฉันไม่ต้องการได้รับข่าวสาร</label><br>
-
+        <div class="news">
+            <input type="radio" id="news" name="news" required>
+            <label for="yes">ใช่ ฉันต้องการได้รับข่าวสาร</label><br>
+            <input type="radio" id="news" name="news" required>
+            <label for="no">ไม่ ฉันไม่ต้องการได้รับข่าวสาร</label><br>
+        </div>
 
         <br>
         <input type="submit" value="Sign up">
